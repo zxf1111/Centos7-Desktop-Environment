@@ -25,3 +25,7 @@
 * on centos7 
 * systemctl get-default  multi-user.target: analogous to runlevel 3 /etc/inittab
 * systemctl set-default graphical.target
+###change en33 to old eth0
+* vi /etc/default/grub  At the end of GRUB_CMDLINE_LINUX line append "net.ifnames=0 biosdevname=0"
+* grub2-mkconfig -o /boot/grub2/grub.cfg
+* reboot
