@@ -39,5 +39,5 @@
 
 ###python35 virtualenv
 * virtualenv -p /usr/bin/python3 py3env
-*source py3env/bin/activate
-*pip install package-name
+* source py3env/bin/activate
+* pip install package-name
