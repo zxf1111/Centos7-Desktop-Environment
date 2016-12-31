@@ -1,6 +1,6 @@
 # Centos7-Desktop-Environment
 
-1st yum groupinstall X11
+**1st yum groupinstall X11**
 
 ###GNOME Desktop Environmen
    
