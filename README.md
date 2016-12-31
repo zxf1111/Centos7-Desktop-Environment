@@ -30,11 +30,13 @@
 * vi /etc/default/grub  At the end of GRUB_CMDLINE_LINUX line append "net.ifnames=0 biosdevname=0"
 * grub2-mkconfig -o /boot/grub2/grub.cfg
 * reboot
+
 ###install python35
 * yum install -y python35u python35u-libs python35u-devel python35u-pip
 * which -a python3.5
 * /bin/python3.5
 * /usr/bin/python3.5
+
 ###python35 virtualenv
 * virtualenv -p /usr/bin/python3 py3env
 *source py3env/bin/activate
