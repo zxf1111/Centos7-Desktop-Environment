@@ -19,3 +19,9 @@
 * echo "exec /usr/bin/xfce4-session" >> ~/.xinitrc 
 * startx
 
+###set default startx 
+* on centos6 vim /etc/inittab
+* change the number in the line id:3:initdefault: from a 3 to a 5
+* on centos7 
+* systemctl get-default  multi-user.target: analogous to runlevel 3 /etc/inittab
+* systemctl set-default graphical.target
