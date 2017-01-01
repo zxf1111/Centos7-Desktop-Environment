@@ -41,3 +41,6 @@
 * virtualenv -p /usr/bin/python3 py3env
 * source py3env/bin/activate
 * pip install package-name
+
+###my prompt
+* PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h $(date +%F*%T) \[\e[33m\]\w\[\e[0m\]\n\$ '
