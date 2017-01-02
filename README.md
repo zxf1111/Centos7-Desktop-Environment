@@ -44,3 +44,64 @@
 
 ###my prompt
 * PS1='\[\e]0;\w\a\]\n\[\e[32m\]\u@\h $(date +%F*%T) \[\e[33m\]\w\[\e[0m\]\n\$ '
+
+### my terminator 4 windows
+** edit ~/.config/terminator/config 
+    
+    [layouts]
+  
+    [[default]]
+    
+    [[[root]]]
+      position = -4:0
+      type = Window
+      order = 0 
+      parent = ""
+      size = 1072, 1884
+
+    [[[grand]]]
+      position = 536 
+      type = HPaned
+      order = 0 
+      parent = root
+    [[[left]]]
+      position = 942 
+      type = VPaned
+      order = 0 
+      parent = grand
+    [[[right]]]
+      position = 942 
+      type = VPaned
+      order = 1 
+      parent = grand
+
+
+
+    [[[terminal1]]]
+      profile = default
+      type = Terminal
+      order = 0 
+      parent = left
+      command = "cd ~/code/foo; bash"
+    [[[terminal2]]]
+      profile = default
+      type = Terminal
+      order = 1 
+      parent = left
+      command = "cd ~/bar/baz; bash"
+
+
+
+    [[[terminal3]]]
+      profile = default
+      type = Terminal
+      order = 1 
+      parent = right
+      command = ""
+    [[[terminal4]]]
+      profile = default
+      type = Terminal
+      order = 0 
+      parent = right
+      command = "cmus; bash"
+
