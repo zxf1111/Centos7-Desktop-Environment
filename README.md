@@ -105,4 +105,4 @@
       parent = right
       command = "cmus; bash"
 ###don't save history before space 
-   *export HISTCONTROL=ignorespace
+   * export HISTCONTROL=ignorespace
